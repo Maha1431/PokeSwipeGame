@@ -1,0 +1,58 @@
+/* LikedPokemon.css */
+
+.liked-pokemon-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .liked-pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Create columns that fit within the container */
+    gap: 20px; /* Space between cards */
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  .liked-pokemon-card {
+    background-color: lightgrey;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 200px;
+    width: 100%; /* Ensure cards take full width of the container */
+  }
+  
+  .liked-pokemon-card img {
+    width: 100px; /* Adjust the image size as needed */
+    height: 100px; /* Maintain the aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .liked-pokemon-card h3 {
+    margin-top: 10px;
+    font-size: 26px;
+    font-family: 'Caveat';
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .liked-pokemon-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Decrease column width for smaller screens */
+      gap: 10px; /* Decrease gap between cards for smaller screens */
+    }
+  
+    .liked-pokemon-card {
+      max-width: 120px; /* Decrease max-width of cards for smaller screens */
+    }
+  
+    .liked-pokemon-card img {
+      width: 80px; /* Decrease image size for smaller screens */
+      height: 80px; /* Maintain aspect ratio */
+    }
+  
+    .liked-pokemon-card h3 {
+      font-size: 20px; /* Decrease font size for smaller screens */
+    }
+  }
+  

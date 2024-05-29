@@ -1,0 +1,99 @@
+/* PokemonDetails.css */
+
+.Pokemon-card {
+    background-color: lightgrey;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  .heading {
+    margin-top: 10px;
+  }
+  
+  .abilities-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow abilities to wrap to the next line */
+    justify-content: center; /* Center abilities horizontally */
+    padding: 8px;
+  }
+  
+  .ability-box {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px; /* Add margin between ability and type boxes */
+    background-color: yellow;
+    font-family: 'Caveat';
+    font-size: 26px;
+  }
+  .types-box{
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: lightseagreen;
+    font-family: 'Caveat';
+    font-size: 26px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Add margin to separate buttons from abilities/types */
+  }
+  
+  .dislikebtn {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: hotpink;
+    font-family: 'Caveat';
+    font-size: 26px;
+  }
+  .likebtn{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    font-family: 'Caveat';
+    font-size: 26px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .Pokemon-card {
+      max-width: 100%; /* Adjust card width to fit smaller screens */
+    }
+  
+    .ability-box {
+      padding: 6px; /* Decrease padding for smaller screens */
+      font-size: 16px; /* Decrease font size for smaller screens */
+      background-color: yellow;
+      font-family: 'Caveat';
+    }
+    .types-box{
+        padding: 6px; /* Decrease padding for smaller screens */
+        font-size: 16px; /* Decrease font size for smaller screens */
+        background-color: lightseagreen;
+        font-family: 'Caveat';
+    }
+  
+    .buttons-container {
+      flex-direction: column; /* Stack buttons vertically for smaller screens */
+    }
+  
+    .dislikebtn {
+      width: 100%; /* Make buttons full width for smaller screens */
+      margin-top: 5px; /* Add margin between buttons */
+      background-color: hotpink;
+      font-family: 'Caveat'
+    }
+    .likebtn{
+        width: 100%; /* Make buttons full width for smaller screens */
+        margin-top: 5px; /* Add margin between buttons */
+        background-color: lightgreen;
+        font-family: 'Caveat'
+    }
+  }
+  
