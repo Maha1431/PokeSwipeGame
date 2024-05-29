@@ -3,6 +3,7 @@ import "./Welcome.css"; // Import CSS for styling
 
 const Welcome = ({ onStart }) => {
     return (
+        //  created welcome Page for Pokemon
         <div className="welcome-card">
             <h3>How to Play PokéSwipe</h3>
             <p>Pokémon Appear One at a Time <br /> Choose "Like" or "Dislike"

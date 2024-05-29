@@ -3,6 +3,7 @@ import "./PokemonDetails.css"; // Import CSS for styling
 
 const PokemonCard = ({ pokemon, onLike, onDislike }) => {
   return (
+    // "Pokemon card struture and design 
     <div className="Pokemon-card">
       <img src={pokemon.image} alt={pokemon.name} />
       <h2 className='heading'>{pokemon.name}</h2>

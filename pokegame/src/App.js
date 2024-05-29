@@ -7,6 +7,7 @@ import ThemeContextProvider, { ThemeContext } from './ThemeContext';
 import './App.css';
 import Pokeimg from "./assests/pokeapi_256.png";
 import "@fontsource/caveat/400.css";
+//  for theme icon created this 2 components
 import DarkModeIcon from './dartModeIcon'; 
 import LightModeIcon from './LightModeIcon';
 
@@ -38,6 +39,7 @@ function App() {
   };
 
   const handleLike = () => {
+    // if the pokemon is selected then it will go to likepokemon arrlist and next again calling fetch random pokemon
     if (pokemon) {
       setLikedPokemon([...likedPokemon, pokemon]);
       fetchRandomPokemon();
@@ -45,10 +47,14 @@ function App() {
   };
 
   const handleDislike = () => {
+    // if the pokemon is disliked then fetchrandompokemon
     fetchRandomPokemon();
   };
 
   return (
+    //  created routing for navigating each of the component
+    // if the component is / then !pokemon its the welcomepAge component otherwise its redirecting pokemon component
+    //  if the router /liked then its redirect liked component page
     <Router>
       <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
         <img src={Pokeimg} alt='Pokeimg' className="poke-img" />

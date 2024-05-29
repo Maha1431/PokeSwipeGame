@@ -4,6 +4,7 @@ import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlin
 
 const LikedPokemon = ({ likedPokemon }) => {
   return (
+    //  like "Pokemonlist of structure designed here
     <div className="liked-pokemon-container">
       <h2> <NavigateBeforeOutlinedIcon />Pokémon you have liked ❤️</h2>
       <div className="liked-pokemon-grid">
