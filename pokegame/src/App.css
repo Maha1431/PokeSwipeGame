@@ -2,13 +2,15 @@
   text-align: center;
   font-family: 'Caveat', sans-serif;
 }
-
+.dark-mode .liked-pokemon-container{
+color: lightgrey;
+}
 
 .dark-mode .welcome-card,
 .dark-mode .Pokemon-card,
 .dark-mode .liked-pokemon-card {
-  background-color: #575454;
-  color: #fff;
+  background-color: #333333;
+  color: lightgrey;
   font-family: 'Caveat';
   font-size: 26px;
 }
@@ -58,13 +60,3 @@
   
 }
   
-.light{
-  width: 50px;
-  height: 50px;
-  background-color: lightgray;
-}
-.dark{
-  width: 50px;
-  height: 50px;
-  background-color: #575454;
-}
